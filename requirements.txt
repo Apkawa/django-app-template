@@ -1,0 +1,4 @@
+-r requirements/test.txt
+-r requirements/dev.txt
+
+django>=1.11,<3.1
