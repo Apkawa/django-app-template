@@ -1,14 +1,21 @@
+[![PyPi](https://img.shields.io/pypi/v/{django-app-template}.svg)](https://pypi.python.org/pypi/{django-app-template})
 [![Build Status](https://travis-ci.org/Apkawa/{django-app-template}.svg?branch=master)](https://travis-ci.org/Apkawa/{django-app-template})
-[![Coverage Status](https://coveralls.io/repos/github/Apkawa/{django-app-template}/badge.svg)](https://coveralls.io/github/Apkawa/{django-app-template})
-[![codecov](https://codecov.io/gh/Apkawa/{django-app-template}/branch/master/graph/badge.svg)](https://codecov.io/gh/Apkawa/{django-app-template})
+[![Codecov](https://codecov.io/gh/Apkawa/{django-app-template}/branch/master/graph/badge.svg)](https://codecov.io/gh/Apkawa/{django-app-template})
 [![Requirements Status](https://requires.io/github/Apkawa/{django-app-template}/requirements.svg?branch=master)](https://requires.io/github/Apkawa/{django-app-template}/requirements/?branch=master)
 [![PyUP](https://pyup.io/repos/github/Apkawa/{django-app-template}/shield.svg)](https://pyup.io/repos/github/Apkawa/{django-app-template})
 [![PyPI](https://img.shields.io/pypi/pyversions/{django-app-template}.svg)]()
+[![PyPi](https://img.shields.io/pypi/v/{django-app-template}.svg)](https://pypi.python.org/pypi/{django-app-template})
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Template repository for django-app.
 After create find and replace 
 * `{django-app-template}` to new repository name
 * `{example_app}` to new app package name
+
+## TODO
+
+* [ ] Add build docs to gh_pages in travis
+* [ ] Auto create release
 
 # Installation
 
@@ -25,14 +32,16 @@ pip install -e git+https://githib.com/Apkawa/{django-app-template}.git#egg={djan
 
 ## Django and python version
 
-* python-2.7 - django>=1.8,<=1.11
-* python-3.4 - django>=1.8,<=1.11
-* python-3.5 - django>=1.8,<=1.11
-* python-3.6 - django>=1.11
+| Python<br/>Django |      2.7           |        3.5         |      3.6           |      3.7           |       3.8          |
+|:-----------------:|--------------------|--------------------|--------------------|--------------------|--------------------|
+| 1.8               | :heavy_check_mark: |       :x:          |      :x:           |       :x:          |      :x:           |
+| 1.11              | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |      :x:           |
+| 2.2               |       :x:          | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 3.0               |       :x:          |       :x:          | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
+:bangbang: Support Python 2.7 will be removed after 2020-01-01
 
 # Usage
-
 
 
 # Contributing
