@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/Apkawa/{django-app-template}.svg?branch=master)](https://travis-ci.org/Apkawa/{django-app-template})
-[![Coverage Status](https://coveralls.io/repos/github/Apkawa/{django-app-template}/badge.svg)](https://coveralls.io/github/Apkawa/{django-app-template})
 [![codecov](https://codecov.io/gh/Apkawa/{django-app-template}/branch/master/graph/badge.svg)](https://codecov.io/gh/Apkawa/{django-app-template})
 [![Requirements Status](https://requires.io/github/Apkawa/{django-app-template}/requirements.svg?branch=master)](https://requires.io/github/Apkawa/{django-app-template}/requirements/?branch=master)
 [![PyUP](https://pyup.io/repos/github/Apkawa/{django-app-template}/shield.svg)](https://pyup.io/repos/github/Apkawa/{django-app-template})
@@ -25,10 +24,12 @@ pip install -e git+https://githib.com/Apkawa/{django-app-template}.git#egg={djan
 
 ## Django and python version
 
-* python-2.7 - django>=1.8,<=1.11
-* python-3.4 - django>=1.8,<=1.11
-* python-3.5 - django>=1.8,<=1.11
-* python-3.6 - django>=1.11
+| Python<br/>Django |        3.5         |      3.6           |      3.7           |       3.8          |
+|:-----------------:|--------------------|--------------------|--------------------|--------------------|
+| 1.8               |       :x:          |      :x:           |       :x:          |      :x:           |
+| 1.11              | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |      :x:           |
+| 2.2               | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 3.0               |       :x:          | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 
 # Usage

@@ -21,13 +21,13 @@
 
 
 project = '{django-app-template}'
-copyright = '2018, Apkawa <apkawa@gmail.com'
+copyright = '2020, Apkawa <apkawa@gmail.com'
 author = 'Apkawa <apkawa@gmail.com'
 
 # The short X.Y version
-version = ''
+version = '0.0'
 # The full version, including alpha/beta/rc tags
-release = '0.0.1'
+release = '0.0.0'
 
 # -- General configuration ---------------------------------------------------
 
