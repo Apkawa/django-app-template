@@ -8,6 +8,7 @@ FIXTURES_ROOT = os.path.join(TEST_ROOT, 'fixtures')
 
 MEDIA_ROOT = os.path.join(os.path.normcase(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 'media')
 MEDIA_URL = '/media/'
+STATIC_URL = '/static/'
 
 DATABASE_ENGINE = 'sqlite3'
 
