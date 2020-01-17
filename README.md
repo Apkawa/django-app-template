@@ -32,12 +32,12 @@ pip install -e git+https://githib.com/Apkawa/{django-app-template}.git#egg={djan
 
 ## Django and python version
 
-| Python<br/>Django |      2.7           |        3.5         |      3.6           |      3.7           |       3.8          |
-|:-----------------:|--------------------|--------------------|--------------------|--------------------|--------------------|
-| 1.8               | :heavy_check_mark: |       :x:          |      :x:           |       :x:          |      :x:           |
-| 1.11              | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |      :x:           |
-| 2.2               |       :x:          | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| 3.0               |       :x:          |       :x:          | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Python<br/>Django |        3.5         |      3.6           |      3.7           |       3.8          |
+|:-----------------:|--------------------|--------------------|--------------------|--------------------|
+| 1.8               |       :x:          |      :x:           |       :x:          |      :x:           |
+| 1.11              | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |      :x:           |
+| 2.2               | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 3.0               |       :x:          | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 :bangbang: Support Python 2.7 will be removed after 2020-01-01
 
