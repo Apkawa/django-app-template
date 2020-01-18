@@ -2,15 +2,18 @@ sudo: false
 language: python
 
 python:
-    - "3.5"
-    - "3.6"
-    - "3.7"
-    - "3.8"
+  - "3.5"
+  - "3.6"
+  - "3.7"
+  - "3.8"
+  - "3.9-dev"
+  - "nightly"
+
 env:
-  - DJANGO=1.8
   - DJANGO=1.11
   - DJANGO=2.2
   - DJANGO=3.0
+  - DJANGO=dev
 
 matrix:
   fast_finish: true
@@ -25,16 +28,18 @@ matrix:
     - { env: DJANGO=1.11, python: "3.8" }
     - { env: DJANGO=3.0, python: "3.5" }
   allow_failures:
-    - env: DJANGO=1.8
+    - python: "3.9-dev"
+    - python: "nightly"
     - env: DJANGO=1.11
     - env: TOXENV=qa
     - env: TOXENV=py37-django-dev
 
 
 install: pip install tox-travis python-coveralls codecov
+
 script: tox
 after_success:
-  - codecov -e TOXENV,DJANGO
+  - codecov
 
 # TODO
 #deploy:
