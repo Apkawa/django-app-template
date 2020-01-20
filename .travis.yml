@@ -22,11 +22,14 @@ matrix:
       python: "3.7"
     - env: TOXENV=py37-django-dev
       python: "3.7"
+
   exclude:
     # Python/Django combinations that aren't officially supported
-    - { env: DJANGO=1.11, python: "3.7" }
     - { env: DJANGO=1.11, python: "3.8" }
+    - { env: DJANGO=1.11, python: "3.9-dev" }
+    - { env: DJANGO=1.11, python: "nightly" }
     - { env: DJANGO=3.0, python: "3.5" }
+
   allow_failures:
     - python: "3.9-dev"
     - python: "nightly"
@@ -41,7 +44,7 @@ script: tox
 after_success:
   - codecov
 
-# TODO
+
 #deploy:
 #  provider: pypi
 #  user: Apkawa
