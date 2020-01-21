@@ -14,7 +14,8 @@ mock==3.0.5
 
 # Docs
 
-recommonmark
 Sphinx
-alabaster
-
+#alabaster
+sphinx_rtd_theme
+recommonmark
+m2r
