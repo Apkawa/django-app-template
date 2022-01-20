@@ -11,8 +11,17 @@ pytest-django
 pytest-pythonpath
 pytest-cov
 mock
+
+# QA
 flake8
 mypy
+django-stubs
+
+pylint
+pylint-pytest
+pylint-common
+pylint-django
+
 
 # Docs
 
@@ -23,5 +32,5 @@ m2r2
 sphinx-autodoc-typehints
 sphinx-paramlinks
 
-# QA
+# hooks
 pre-commit

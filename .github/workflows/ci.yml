@@ -32,6 +32,7 @@ jobs:
             experimental: true
 
           - python-version: "pypy-3.7"
+            toxenv: django32
             experimental: true
 
 

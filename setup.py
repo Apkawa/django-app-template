@@ -41,7 +41,7 @@ setup(
     python_requires='>=3.6, <4',
     install_requires=[
         'six',
-        'Django>=2.2,<4.1'
+        'Django>=2.2'
     ],
     zip_safe=False,
     include_package_data=True,

@@ -1,8 +1,7 @@
 # coding: utf-8
 from __future__ import unicode_literals
 
-# noinspection PyUnresolvedReferences
-from .dev import *
+from .dev import *  # noqa
 
 DATABASES = {
     'default': {

@@ -35,3 +35,9 @@ repos:
         entry: tox -e mypy
         pass_filenames: false
         always_run: true
+      - id: pylint
+        name: pylint
+        language: system
+        entry: tox -e pylint
+        pass_filenames: false
+        always_run: true
