@@ -6,19 +6,6 @@ from setuptools import setup, find_packages
 
 version = '0.0.0'
 
-if sys.argv[-1] == 'publish':
-    try:
-        import wheel
-
-        print("Wheel version: ", wheel.__version__)
-    except ImportError:
-        print('Wheel library missing. Please run "pip install wheel"')
-        sys.exit()
-    os.system('rm -rf dist/')
-    os.system('python setup.py sdist bdist_wheel')
-    os.system('twine upload dist/*')
-    sys.exit()
-
 if sys.argv[1] == 'bumpversion':
     print("bumpversion")
     try:
@@ -31,8 +18,8 @@ if sys.argv[1] == 'bumpversion':
 
 __doc__ = ""
 
-project_name = '{django-app-template}'
-app_name = '{example_app}'
+project_name = '__django-app-template__'
+app_name = '__example_app__'
 
 ROOT = os.path.dirname(__file__)
 
@@ -42,7 +29,7 @@ def read(fname):
 
 
 setup(
-    name=project_name,
+    name=project_name.replace('__', ''),
     version=version,
     description=__doc__,
     long_description=read('README.md'),
@@ -54,7 +41,7 @@ setup(
     python_requires='>=3.6, <4',
     install_requires=[
         'six',
-        'Django>=1.8,<3.2'
+        'Django>=2.2,<4.1'
     ],
     zip_safe=False,
     include_package_data=True,
@@ -64,16 +51,19 @@ setup(
         'Development Status :: 3 - Alpha',
         'Framework :: Django',
         'Framework :: Django :: 2.2',
-        'Framework :: Django :: 3.0',
         'Framework :: Django :: 3.1',
+        'Framework :: Django :: 4.0',
+        # 'Framework :: Django :: 4.2',
         'Intended Audience :: Developers',
         'Environment :: Web Environment',
         'License :: OSI Approved :: MIT License',
         'Topic :: Internet :: WWW/HTTP',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        # 'Programming Language :: Python :: Implementation :: PyPy',
     ],
 )

@@ -24,7 +24,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.auth',
     'django.contrib.admin',
-    '{example_app}',
+    '__example_app__',
     'tests',
 ]
 

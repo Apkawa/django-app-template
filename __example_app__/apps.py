@@ -1,7 +1,7 @@
 from django.apps import AppConfig as BaseConfig
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 
 class AppConfig(BaseConfig):
-    name = '{example_app}'
+    name = '__example_app__'
     # verbose_name = _('Example app')

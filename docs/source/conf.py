@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 
-project = '{django-app-template}'
-copyright = '2020, Apkawa <apkawa@gmail.com'
+project = '__django-app-template__'
+copyright = '{{ YEAR }}, Apkawa <apkawa@gmail.com'
 author = 'Apkawa <apkawa@gmail.com'
 
 # The short X.Y version
@@ -39,7 +39,7 @@ release = '0.0.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'm2r'
+    'm2r2'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -98,7 +98,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = ' {django-app-template}doc'
+htmlhelp_basename = ' __django-app-template__doc'
 
 # -- Options for LaTeX output ------------------------------------------------
 
@@ -124,7 +124,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, ' {django-app-template}.tex', ' {django-app-template} Documentation',
+    (master_doc, ' __django-app-template__.tex', ' __django-app-template__ Documentation',
      'Apkawa', 'manual'),
 ]
 
@@ -133,7 +133,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, ' {django-app-template}', ' {django-app-template} Documentation',
+    (master_doc, ' __django-app-template__', ' __django-app-template__ Documentation',
      [author], 1)
 ]
 
@@ -144,8 +144,8 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (
-        master_doc, ' {django-app-template}', ' {django-app-template} Documentation',
-        author, '{django-app-template}', 'One line description of project.',
+        master_doc, ' __django-app-template__', ' __django-app-template__ Documentation',
+        author, '__django-app-template__', 'One line description of project.',
         'Miscellaneous'),
 ]
 
@@ -154,7 +154,7 @@ from recommonmark.transform import AutoStructify
 
 # At the bottom of conf.py
 def setup(app):
-    git_doc_root = 'https://githib.com/Apkawa/{django-app-template}/blob/master/docs/'
+    git_doc_root = 'https://githib.com/Apkawa/__django-app-template__/blob/master/docs/'
     app.add_config_value('recommonmark_config', {
         'url_resolver': lambda url: git_doc_root + url,
         'auto_toc_tree_section': 'Contents',

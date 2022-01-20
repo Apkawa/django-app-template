@@ -8,4 +8,4 @@ except ImportError:
 
 class TestConfig(AppConfig):
     name = 'tests'
-    label = '{example_app}_tests'
+    label = '__example_app___tests'

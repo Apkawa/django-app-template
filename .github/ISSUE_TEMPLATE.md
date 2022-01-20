@@ -1,4 +1,4 @@
-* {django-app-template} version:
+* __django-app-template__ version:
 * Django version:
 * Python version:
 * Operating System:
